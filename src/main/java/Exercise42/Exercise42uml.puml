@@ -1,0 +1,8 @@
+@startuml
+class Main
+class nameGetter
+class Formatter
+
+nameGetter --|> Formatter
+Formatter --|> Main
+@enduml

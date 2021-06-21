@@ -1,0 +1,13 @@
+@startuml
+class Main
+class FileInput
+class JsonStorage
+class ItemChecker
+class Output
+
+FileInput --|> JsonStorage
+JsonStorage --|> ItemChecker
+ItemChecker --|> Main
+Main --|> Output
+
+@enduml

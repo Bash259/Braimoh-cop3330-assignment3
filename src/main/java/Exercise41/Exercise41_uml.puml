@@ -1,0 +1,11 @@
+@startuml
+class Main
+
+Main --|> FileReader
+
+FileReader --|> GetStrings
+GetStrings --|> NameSorter
+
+NameSorter --|> Main
+NameSorter --|> OutputToFile
+@enduml

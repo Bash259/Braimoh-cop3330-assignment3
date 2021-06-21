@@ -1,0 +1,11 @@
+@startuml
+class Main
+class InputFromFile
+class Counter
+class Transformer
+
+Transformer <-- InputFromFile
+Transformer --> Counter
+
+Counter --> Main
+@enduml

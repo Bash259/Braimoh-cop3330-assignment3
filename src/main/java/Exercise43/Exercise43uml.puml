@@ -1,0 +1,17 @@
+@startuml
+class main
+
+main <|-- siteNameInput
+main <|--  AuthorInput
+main <|--  JavascriptInput
+main <|--  CSSInput
+
+JavascriptInput <|--  yes
+JavascriptInput <|--  no
+
+yes <|--  createJavaScriptFolder
+
+CSSInput <|--  Yes
+CSSInput <|--  No
+Yes <|--  createCSSFolder
+@enduml

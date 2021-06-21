@@ -1,0 +1,11 @@
+@startuml
+class main
+
+main --|> Input
+Input --|> RefactorClass
+
+RefactorClass --|> OutputTxt
+Input --|> main
+
+RefactorClass --|> main
+@enduml
